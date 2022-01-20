@@ -119,7 +119,7 @@
   left: 0px;
   width: 100vw;
   height: 100vh;
-  padding: 60px 21px;
+  padding-top: 60px;
   background-color: #e17992;
   z-index: 10;
 
@@ -153,6 +153,8 @@
 .buy-now--mob {
   position: relative;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 209px;
   height: 44px;
 }
@@ -165,6 +167,32 @@
 .buy-now__icon--mob {
   position: absolute;
   display: block;
+}
+
+.mob-menu__list {
+  margin-top: 28px;
+}
+
+.mob-menu__item {
+  min-height: 42px;
+  padding-left: 21px;
+  border: 1px solid #e18298;
+}
+
+.mob-menu__link {
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  align-items: center;
+  color: $main-text-color;
+  &--curent {
+    color: $main-title-color;
+  }
 }
 
 // ------------------HERO---------------------
