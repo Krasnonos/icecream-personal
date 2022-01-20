@@ -5,7 +5,7 @@
 .background {
   overflow: hidden;
   background-color: #ffb8ca;
-  background-image: url(../images/icecream-mob-1x-min.png), url(../images/ellipse3.png);
+  background-image: url(../images/icecream-mob-1x-min.png), url(../images/ellipse_3.png);
   background-repeat: no-repeat;
   background-position: left calc(50% + 50px) bottom 0px, left calc(50% + 50px) bottom 75px;
 }
@@ -126,7 +126,7 @@
   padding: 60px 21px;
   background-color: #e17992;
   z-index: 10;
-
+  transform: translateX(100%);
   transition: transform $time $cube;
 }
 
@@ -152,6 +152,24 @@
 .mob-menu__close-icon {
   width: 24px;
   height: 16px;
+}
+
+.buy-now--mob {
+  position: relative;
+  display: block;
+  width: 209px;
+  height: 44px;
+}
+
+.buy-now__btn--mob {
+  display: block;
+  padding: 16px 62px;
+  padding-right: 83px;
+}
+
+.buy-now__icon--mob {
+  position: absolute;
+  display: block;
 }
 
 // ------------------HERO---------------------
