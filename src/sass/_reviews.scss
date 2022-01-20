@@ -1,0 +1,208 @@
+.container-1 {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 170px;
+  }
+
+  @media screen and(min-width: 768px) {
+    height: 418px;
+    margin-bottom: 197px;
+  }
+  @media screen and(min-width: 1280px) {
+    height: 418px;
+    margin-bottom: 234px;
+  }
+  margin: 0 auto;
+  height: 621px;
+  width: 100%;
+
+  @media screen and(min-width: 320px) {
+    width: 280px;
+  }
+  @media screen and(min-width: 768px) {
+    width: 620px;
+  }
+  @media screen and(min-width: 1280px) {
+    width: 926px;
+  }
+}
+.list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.review-img {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+  margin-bottom: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review__section {
+  @media screen and (min-width: 768px) {
+    padding: 47px 80px 34px 80px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 47px 89px 39px 87px;
+    margin-bottom: 15px;
+  }
+  position: relative;
+  background-color: #fafafa;
+  padding: 43px 66px 26px 57px;
+  margin-bottom: 30px;
+}
+
+.review__section__text {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+  // margin-top: 0.8em;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.59;
+  text-align: center;
+  color: #000;
+  background-image: url(../images/quotes-min.png);
+  background-repeat: no-repeat;
+}
+.wrap {
+  background: repeating-linear-gradient(
+    to bottom,
+    #fafafa,
+    #fafafa 30px,
+    #e1e1e1 31px,
+    #e1e1e1 25px
+  );
+}
+.review__dots {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.review__title {
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.86;
+    margin-bottom: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.86;
+    margin-bottom: 35px;
+  }
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.84;
+  text-align: center;
+  color: #000;
+  margin-bottom: 30px;
+  &::before {
+    background-image: url(../images/review-dots.png);
+    content: '';
+    display: block;
+    width: 32px;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+  }
+}
+.slider {
+  // padding-top: 80px;
+
+  overflow: hidden;
+  border: none;
+}
+.middle {
+  position: relative;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+}
+.navigation {
+  @media screen and (min-width: 768px) {
+    bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 50px;
+  }
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar {
+  height: 12px;
+  width: 12px;
+  margin: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  background-color: #d9d9d9;
+  opacity: 0.5;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  &:hover,
+  &:focus {
+    background-color: #d31342;
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+input[name='r'] {
+  position: absolute;
+  visibility: hidden;
+}
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.slide {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+.review {
+  width: 100%;
+  height: 100%;
+}
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+#r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+#r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+#r4:checked ~ .s1 {
+  margin-left: -75%;
+}
