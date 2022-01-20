@@ -115,6 +115,46 @@
   }
 }
 
+// ----------------MOB-MENU---------------------
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  padding: 60px 21px;
+  background-color: #e17992;
+  z-index: 10;
+
+  transition: transform $time $cube;
+}
+
+.mob-menu.is-open {
+  transform: translateX(0);
+}
+
+.mob-menu__close-btn {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $hover-icon-bg-color;
+  }
+}
+
+.mob-menu__close-icon {
+  width: 24px;
+  height: 16px;
+}
+
+// ------------------HERO---------------------
 .hero__tittle {
   font-family: Titan One;
   font-style: normal;
