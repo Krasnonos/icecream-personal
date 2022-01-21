@@ -5,9 +5,16 @@
 .background {
   overflow: hidden;
   background-color: #ffb8ca;
-  background-image: url(../images/icecream-mob-1x-min.png), url(../images/ellipse_3.png);
+  background-image: url(../images/icecream-mob-1x-min.png), url(../images/ellipse-tab-1x-min.png);
   background-repeat: no-repeat;
   background-position: left calc(50% + 50px) bottom 0px, left calc(50% + 50px) bottom 75px;
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/icecream-tab-1x-min.png), url(../images/ellipse-mob-1x-min.png);
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/icecream-desk-1x-min.png),
+      url(../images/ellipse-desk-1x-min.png);
+  }
 }
 
 .header {
@@ -15,11 +22,6 @@
   @media screen and (min-width: 768px) {
     padding-top: 38px;
   }
-}
-
-.hero {
-  padding-top: 137px;
-  padding-bottom: 160px;
 }
 
 .menu__flex {
@@ -194,6 +196,21 @@
 }
 
 // ------------------HERO---------------------
+
+.hero {
+  padding-top: 137px;
+  padding-bottom: 160px;
+  @media screen and (min-width: 768px) {
+    padding-top: 15px;
+    padding-bottom: 34px;
+  }
+}
+
+.flex-hero {
+  display: flex;
+  justify-content: space-between;
+}
+
 .hero__tittle {
   font-family: Titan One;
   font-style: normal;
@@ -259,4 +276,58 @@
 .hero__link--made {
   color: #d41443;
   background-color: #ffffff;
+}
+
+.hero-right__item {
+  text-align: right;
+  & + & {
+    margin-top: 14px;
+  }
+}
+
+.hero-right__text {
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  color: $main-text-color;
+}
+
+.hero-right__number {
+  position: relative;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $main-title-color;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: -6px;
+    z-index: -1;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+
+.hero-description {
+  margin-top: 66px;
+  margin-left: 120px;
+}
+
+.hero-description__text {
+  max-width: 114px;
+  font-size: 8px;
+  line-height: 1.5;
+  color: $main-text-color;
+}
+
+.hero-description__btn {
+  border: none;
+  margin-top: 7px;
 }
