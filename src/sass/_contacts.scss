@@ -1,0 +1,102 @@
+.contacts {
+  background-image: linear-gradient(to bottom, #ffffff 102px, $second-bg-color 102px);
+}
+
+.contacts__list {
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.contacts__item {
+  width: 220px;
+  padding: 43px 20px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contacts__item + .contacts__item {
+  margin-top: 20px;
+}
+
+.contacts__tittle {
+  display: inline-block;
+  padding: 3px 25px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $second-title-color;
+}
+
+.contacts__tittle--brown {
+  background-color: $second-current-color;
+}
+
+.contacts__tittle--green {
+  background-color: $third-current-color;
+}
+
+.contacts__city {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $second-text-color;
+}
+
+.contacts__text {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $third-text-color;
+}
+
+.schedule {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.schedule__item + .schedule__item {
+  margin-top: 10px;
+}
+
+.schedule__day {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $second-text-color;
+}
+
+.schedule__hours {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $fourth-text-color;
+}
+
+.contacts-information {
+  margin-top: 25px;
+}
+
+.contacts-information__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $third-text-color;
+  &:hover,
+  &:focus {
+    color: $hover-text-color;
+  }
+}
