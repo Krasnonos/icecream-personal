@@ -5,7 +5,7 @@
 .background {
   overflow: hidden;
   background-color: #ffb8ca;
-  background-image: url(../images/icecream-mob-1x-min.png), url(../images/ellipse-tab-1x-min.png);
+  background-image: url(../images/icecream-mob-1x-min.png), url(../images/ellipse-mob-1x-min.png);
   background-repeat: no-repeat;
   background-position: left calc(50% + 50px) bottom 0px, left calc(50% + 50px) bottom 75px;
   @media screen and (min-width: 768px) {
@@ -278,6 +278,13 @@
   background-color: #ffffff;
 }
 
+.flex-hero__right {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
 .hero-right__item {
   text-align: right;
   & + & {
@@ -316,8 +323,12 @@
 }
 
 .hero-description {
+  display: none;
   margin-top: 66px;
   margin-left: 120px;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .hero-description__text {
