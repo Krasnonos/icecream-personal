@@ -1,5 +1,8 @@
 .contacts {
   background-image: linear-gradient(to bottom, #ffffff 84px, $second-bg-color 84px);
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, #ffffff 78px, $second-bg-color 78px);
+  }
 }
 
 .contacts__list {
@@ -8,6 +11,8 @@
   margin-right: auto;
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
   }
 }
 
@@ -17,10 +22,17 @@
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  @media screen and (min-width: 768px) {
+    padding: 50px 31px;
+  }
 }
 
 .contacts__item + .contacts__item {
   margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-left: 20px;
+  }
 }
 
 .contacts__tittle {
@@ -33,6 +45,11 @@
   line-height: 1.86;
   letter-spacing: 0.04em;
   color: $second-title-color;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .contacts__tittle--brown {
@@ -50,6 +67,10 @@
   line-height: 1.86;
   letter-spacing: 0.04em;
   color: $second-text-color;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
 }
 
 .contacts__text {
@@ -58,6 +79,10 @@
   font-size: 12px;
   line-height: 1.5;
   color: $third-text-color;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    line-height: 1.66;
+  }
 }
 
 .schedule {
@@ -65,10 +90,17 @@
   padding-bottom: 25px;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .schedule__item + .schedule__item {
   margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    margin-top: 16px;
+  }
 }
 
 .schedule__day {
@@ -76,6 +108,9 @@
   font-size: 12px;
   line-height: 1.86;
   color: $second-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .schedule__hours {
@@ -83,10 +118,16 @@
   font-size: 12px;
   line-height: 1.86;
   color: $fourth-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .contacts-information {
   margin-top: 25px;
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .contacts-information__link {
@@ -99,6 +140,10 @@
   &:focus {
     color: $hover-text-color;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.83;
+  }
 }
 
 .btn-list {
@@ -106,6 +151,13 @@
   max-width: 161px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-width: 393px;
+    margin-top: 81px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .btn-list__item {
@@ -114,6 +166,10 @@
 
 .btn-list__item + .btn-list__item {
   margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-left: 15px;
+  }
 }
 
 .btn-list__btn {
@@ -133,6 +189,9 @@
   &:focus {
     background-color: #8a0a2a;
   }
+  @media screen and (min-width: 768px) {
+    width: 198px;
+  }
 }
 
 .btn-list__btn--white {
@@ -142,6 +201,9 @@
   &:focus {
     background-color: #ecebeb;
   }
+  @media screen and (min-width: 768px) {
+    width: 180px;
+  }
 }
 
 .btn-list__icon {
@@ -149,4 +211,7 @@
   margin-left: 8px;
   min-width: 4px;
   min-height: 8px;
+  @media screen and (min-width: 768px) {
+    margin-left: 14px;
+  }
 }
