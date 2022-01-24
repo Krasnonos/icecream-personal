@@ -105,6 +105,10 @@
   margin-top: 54px;
 }
 
+.btn-list__item {
+  position: relative;
+}
+
 .btn-list__item + .btn-list__item {
   margin-top: 10px;
 }
@@ -117,7 +121,7 @@
 }
 
 .btn-list__icon {
-  margin-left: 8px;
+  position: absolute;
   min-width: 4px;
   min-height: 8px;
 }
