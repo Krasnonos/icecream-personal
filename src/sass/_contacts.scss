@@ -129,16 +129,24 @@
 .btn-list__btn--red {
   color: $main-text-color;
   background-color: $main-btn-color;
+  &:hover,
+  &:focus {
+    background-color: #8a0a2a;
+  }
 }
 
 .btn-list__btn--white {
   color: $main-btn-color;
   background-color: $main-text-color;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 
 .btn-list__icon {
-  margin-left: 8px;
   fill-opacity: 0;
+  margin-left: 8px;
   min-width: 4px;
   min-height: 8px;
 }
