@@ -3,6 +3,14 @@
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to bottom, #ffffff 78px, $second-bg-color 78px);
   }
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(to bottom, #ffffff 102px, $second-bg-color 102px);
+  }
+}
+
+.contacts .container {
+  background-image: url(../images/bg-contacts-desk-min.png);
+  background-position: top 69px left 0px;
 }
 
 .contacts__list {
@@ -13,6 +21,9 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 700px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1050px;
   }
 }
 
@@ -25,6 +36,13 @@
   @media screen and (min-width: 768px) {
     padding: 50px 31px;
   }
+  @media screen and (min-width: 1280px) {
+    min-width: 330px;
+    padding-top: 51px;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-bottom: 61px;
+  }
 }
 
 .contacts__item + .contacts__item {
@@ -32,6 +50,9 @@
   @media screen and (min-width: 768px) {
     margin-top: 0;
     margin-left: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 30px;
   }
 }
 
@@ -49,6 +70,10 @@
     margin-bottom: 30px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    margin-bottom: 32px;
   }
 }
 
@@ -71,6 +96,10 @@
     margin-bottom: 14px;
     font-size: 14px;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__text {
@@ -83,6 +112,11 @@
     margin-bottom: 30px;
     line-height: 1.66;
   }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.83;
+  }
 }
 
 .schedule {
@@ -94,12 +128,19 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  @media screen and (min-width: 1280px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .schedule__item + .schedule__item {
   margin-top: 10px;
   @media screen and (min-width: 768px) {
     margin-top: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 15px;
   }
 }
 
@@ -111,6 +152,9 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .schedule__hours {
@@ -121,12 +165,18 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .contacts-information {
   margin-top: 25px;
   @media screen and (min-width: 768px) {
-    font-size: 30px;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 32px;
   }
 }
 
@@ -144,6 +194,9 @@
     font-size: 14px;
     line-height: 1.83;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .btn-list {
@@ -153,10 +206,8 @@
   margin-right: auto;
   @media screen and (min-width: 768px) {
     display: flex;
-    max-width: 393px;
+    max-width: 380px;
     margin-top: 81px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -190,7 +241,7 @@
     background-color: #8a0a2a;
   }
   @media screen and (min-width: 768px) {
-    width: 198px;
+    width: 191px;
   }
 }
 
@@ -202,7 +253,7 @@
     background-color: #ecebeb;
   }
   @media screen and (min-width: 768px) {
-    width: 180px;
+    width: 174px;
   }
 }
 
@@ -212,6 +263,6 @@
   min-width: 4px;
   min-height: 8px;
   @media screen and (min-width: 768px) {
-    margin-left: 14px;
+    margin-left: 13px;
   }
 }
