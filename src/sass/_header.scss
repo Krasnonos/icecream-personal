@@ -9,8 +9,10 @@
   background-repeat: no-repeat;
   background-position: left calc(50% + 50px) bottom 0px, left calc(50% + 50px) bottom 75px;
   @media screen and (min-width: 768px) {
-    background-image: url(../images/icecream-tab-1x-min.png), url(../images/ellipse-tab-1x-min.png);
-    background-position: left calc(50% + 50px) bottom 0px, left calc(50% + 80px) bottom 75px;
+    background-image: url(../images/icecream-tab-1x-min.png), url(../images/ellipse-tab-1x-min.png),
+      url(../images/hero-milk-tab-1x-min.png), url(../images/so-tasty-tab-1x-min.png);
+    background-position: left calc(50% + 50px) bottom 0px, left calc(50% + 80px) bottom 75px,
+      left calc(50% - 285px) bottom 28px, right calc(50% - 266px) bottom 0px;
   }
   @media screen and (min-width: 1280px) {
     background-image: url(../images/icecream-desk-1x-min.png),
