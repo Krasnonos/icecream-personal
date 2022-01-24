@@ -1,5 +1,5 @@
 .contacts {
-  background-image: linear-gradient(to bottom, #ffffff 102px, $second-bg-color 102px);
+  background-image: linear-gradient(to bottom, #ffffff 84px, $second-bg-color 84px);
 }
 
 .contacts__list {
@@ -99,4 +99,25 @@
   &:focus {
     color: $hover-text-color;
   }
+}
+
+.btn-list {
+  margin-top: 54px;
+}
+
+.btn-list__item + .btn-list__item {
+  margin-top: 10px;
+}
+
+.btn-list__btn {
+  min-width: 161px;
+  height: 44px;
+  border: none;
+  border-radius: 25px;
+}
+
+.btn-list__icon {
+  margin-left: 8px;
+  min-width: 4px;
+  min-height: 8px;
 }
