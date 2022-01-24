@@ -205,11 +205,21 @@
     padding-top: 15px;
     padding-bottom: 34px;
   }
+  @media screen and (min-width: 1280px) {
+    padding-top: 84px;
+    padding-bottom: 56px;
+  }
 }
 
 .flex-hero {
   display: flex;
   justify-content: space-between;
+}
+
+.flex-hero__left {
+  @media screen and (min-width: 1280px) {
+    margin-left: 69px;
+  }
 }
 
 .hero__tittle {
@@ -225,6 +235,10 @@
     font-size: 22px;
     line-height: 1.14;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
+    line-height: 1.16;
+  }
 }
 
 .hero__passion {
@@ -239,6 +253,9 @@
     font-size: 34px;
     line-height: 0.9;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
 }
 
 .hero__list {
@@ -247,11 +264,17 @@
   padding: 0;
   margin-top: 19px;
   margin-bottom: 0px;
+  @media screen and (min-width: 1280px) {
+    margin-top: 25px;
+  }
 }
 
 .hero__item {
   width: auto;
   height: 24px;
+  @media screen and (min-width: 1280px) {
+    height: 40px;
+  }
 }
 
 .hero__item + .hero__item {
@@ -266,13 +289,19 @@
   width: 100%;
   font-family: DM Sans;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 8px;
   line-height: 10px;
   border-radius: 20px;
   padding-left: 14px;
   padding-right: 14px;
   text-decoration: none;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
 }
 
 .hero__link--product {
@@ -304,6 +333,10 @@
   line-height: 10px;
   text-align: right;
   color: $main-text-color;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 
 .hero-right__number {
@@ -327,6 +360,14 @@
     height: 16px;
     border-radius: 50%;
     background-color: #ffffff;
+    @media screen and (min-width: 1280px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.15;
   }
 }
 
@@ -337,6 +378,10 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
+  @media screen and (min-width: 1280px) {
+    margin-left: 249px;
+    margin-top: 112px;
+  }
 }
 
 .hero-description__text {
@@ -344,10 +389,18 @@
   font-size: 8px;
   line-height: 1.5;
   color: $main-text-color;
+  @media screen and (min-width: 1280px) {
+    max-width: 200px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
 }
 
 .hero-description__btn {
   border: none;
   border-radius: 50%;
   margin-top: 7px;
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+  }
 }
