@@ -103,6 +103,9 @@
 
 .btn-list {
   margin-top: 54px;
+  max-width: 161px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-list__item {
@@ -118,10 +121,24 @@
   height: 44px;
   border: none;
   border-radius: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+}
+
+.btn-list__btn--red {
+  color: $main-text-color;
+  background-color: $main-btn-color;
+}
+
+.btn-list__btn--white {
+  color: $main-btn-color;
+  background-color: $main-text-color;
 }
 
 .btn-list__icon {
-  position: absolute;
+  margin-left: 8px;
+  fill-opacity: 0;
   min-width: 4px;
   min-height: 8px;
 }
