@@ -9,8 +9,10 @@
 }
 
 .contacts .container {
-  background-image: url(../images/bg-contacts-desk-min.png);
-  background-position: top 69px left 0px;
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/bg-contacts-desk-min.png);
+    background-position: top 69px left 0px;
+  }
 }
 
 .contacts__list {
@@ -56,7 +58,7 @@
   }
 }
 
-.contacts__tittle {
+.contacts__title {
   display: inline-block;
   padding: 3px 25px;
   border-radius: 4px;
@@ -77,11 +79,11 @@
   }
 }
 
-.contacts__tittle--brown {
+.contacts__title--brown {
   background-color: $second-current-color;
 }
 
-.contacts__tittle--green {
+.contacts__title--green {
   background-color: $third-current-color;
 }
 
