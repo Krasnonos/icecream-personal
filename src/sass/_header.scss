@@ -9,7 +9,8 @@
   background-repeat: no-repeat;
   background-position: left calc(50% + 50px) bottom 0px, left calc(50% + 50px) bottom 75px;
   @media screen and (min-width: 768px) {
-    background-image: url(../images/icecream-tab-1x-min.png), url(../images/ellipse-mob-1x-min.png);
+    background-image: url(../images/icecream-tab-1x-min.png), url(../images/ellipse-tab-1x-min.png);
+    background-position: left calc(50% + 50px) bottom 0px, left calc(50% + 80px) bottom 75px;
   }
   @media screen and (min-width: 1280px) {
     background-image: url(../images/icecream-desk-1x-min.png),
@@ -214,12 +215,16 @@
 .hero__tittle {
   font-family: Titan One;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 26px;
   line-height: 30px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.14;
+  }
 }
 
 .hero__passion {
@@ -227,11 +232,13 @@
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
-  line-height: 96.5%;
-  /* or 46px */
+  line-height: 0.96;
   text-transform: uppercase;
-
-  color: #d41443;
+  color: $main-title-color;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.9;
+  }
 }
 
 .hero__list {
@@ -302,6 +309,7 @@
 .hero-right__number {
   position: relative;
   font-family: Titan One;
+  z-index: 1;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -340,5 +348,6 @@
 
 .hero-description__btn {
   border: none;
+  border-radius: 50%;
   margin-top: 7px;
 }
