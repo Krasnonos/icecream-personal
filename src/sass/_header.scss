@@ -402,10 +402,27 @@
 }
 
 .hero-description__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
   border: none;
   border-radius: 50%;
   margin-top: 7px;
   @media screen and (min-width: 1280px) {
     margin-top: 20px;
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.hero-description__icon {
+  width: 5px;
+  height: 5px;
+  fill: $hover-text-color;
+  @media screen and (min-width: 1280px) {
+    width: 7px;
+    height: 7px;
   }
 }
