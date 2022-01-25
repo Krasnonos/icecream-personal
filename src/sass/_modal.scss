@@ -1,0 +1,204 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  transition: opacity 600ms $cube, visability $time $cube;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) perspective(400px) rotateX(60deg);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform $time $cube;
+  width: 96%;
+  height: auto;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color $time $cube;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    color: pink;
+  }
+}
+
+.modal__icon {
+  fill: currentColor;
+}
+
+.modal__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #000000;
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.form__thumb {
+  max-width: 100%;
+  position: relative;
+  margin-top: 4px;
+}
+
+.form__input {
+  width: 100%;
+  height: 40px;
+  padding: 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color $time $cube;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #000000;
+  outline: none;
+  &:focus {
+    border-color: pink;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill $time $cube;
+  .form__input:focus + & {
+    fill: pink;
+  }
+}
+
+.form__input--fixed {
+  resize: none;
+  width: 100%;
+  min-height: 120px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.privacy__checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 8px;
+  transition: border-color $time $cube, background-color $time $cube;
+  .privacy__input:checked + & {
+    background-color: pink;
+    border-color: transparent;
+  }
+}
+
+.privacy {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #757575;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.72;
+  }
+}
+
+.privacy__link {
+  margin-left: 4px;
+  color: pink;
+}
+
+.form__button {
+  display: block;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: pink;
+  transition: background-color $time $cube, box-shadow $time $cube;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 10px 55px;
+  &:focus,
+  &:hover {
+    background-color: pink;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
