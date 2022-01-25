@@ -20,6 +20,7 @@
   }
   background: $second-bg-color;
 }
+
 .about__pretitle {
   font-family: Titan One;
   font-style: normal;
@@ -39,6 +40,7 @@
     line-height: 1.13;
   }
 }
+
 .about__title {
   font-family: Titan One;
   font-size: 34px;
@@ -57,11 +59,13 @@
     letter-spacing: 0.06em;
   }
 }
+
 .about__block {
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
+
 .about__pre-text {
   font-family: DM Sans;
   font-weight: 500;
@@ -76,6 +80,7 @@
     margin-top: 106px;
   }
 }
+
 .about__text {
   font-family: DM Sans;
   font-weight: 500;
@@ -91,6 +96,7 @@
     line-height: 1.76;
   }
 }
+
 .about__after-text {
   padding-top: 5%;
   margin-bottom: 47px;
@@ -119,6 +125,7 @@
     background-color: $hover-bg-color;
   }
 }
+
 .about__cow {
   background-origin: content-box;
   background-repeat: no-repeat;
@@ -152,6 +159,7 @@
     }
   }
 }
+
 .about__text-block {
   @media screen and (max-width: 767px) {
     margin: 0 auto;
