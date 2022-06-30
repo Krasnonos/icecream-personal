@@ -210,6 +210,7 @@
 }
 
 .product__meta {
+  position: relative;
   margin-top: 66px;
   font-weight: 700;
   font-size: 14px;
@@ -225,13 +226,33 @@
   }
 }
 
-.product__btn {
+.product__main {
+  transition: opacity 1000ms $cube, visability $time $cube;
+}
+
+.product__addition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1000ms $cube, visability $time $cube;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.btn-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.product__btn {
   width: 40px;
   height: 40px;
   border-radius: 50%;
