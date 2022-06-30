@@ -1,0 +1,70 @@
+.backdrop-map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 20;
+  transition: opacity 600ms $cube, visability $time $cube;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop-map.is-hidden .modal-map {
+  transform: translate(-50%, -50%) perspective(400px) rotateX(60deg);
+}
+
+.modal-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform $time $cube;
+  width: 96%;
+  height: auto;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.modal-map__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color $time $cube;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    color: pink;
+  }
+}
+
+.modal-map__icon {
+  stroke: #000000;
+  .modal-map__button:hover &,
+  .modal-map__button:focus & {
+    stroke: red;
+  }
+}

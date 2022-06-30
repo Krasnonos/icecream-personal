@@ -62,7 +62,11 @@
 }
 
 .modal__icon {
-  fill: currentColor;
+  stroke: #000000;
+  .modal__button:hover &,
+  .modal__button:focus & {
+    stroke: red;
+  }
 }
 
 .modal__title {

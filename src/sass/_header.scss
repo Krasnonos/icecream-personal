@@ -155,6 +155,11 @@
 .mob-menu__close-icon {
   width: 24px;
   height: 16px;
+  stroke: #ffffff;
+  &:hover,
+  &:focus {
+    stroke: red;
+  }
 }
 
 .buy-now--mob {
