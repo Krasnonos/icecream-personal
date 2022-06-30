@@ -4,6 +4,7 @@
   left: 0;
   width: 100vw;
   min-height: 100vh;
+  z-index: 20;
   transition: opacity 600ms $cube, visability $time $cube;
   background-color: rgba(0, 0, 0, 0.2);
 }
